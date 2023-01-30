@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxshodow</title>
+    <style>
+.container{
+    display: flex;
+}
+.box{
+    padding: 1rem;
+    margin: 1rem;
+    background: coral;
+    color: #fff;
+    box-shadow: 10px 10px teal;
+    box-shadow: 5px 5px  20px teal;
+    /* Negative values */
+    box-shadow:-5px -5px 20px teal;
+    /* inset */
+    box-shadow: inset 3px 3px teal;
+    /* Multiple shadows */
+    box-shadow: 3px 3px teal, -3px -3px olive;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+   
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        
+    </div>
+</body>
+</html>
