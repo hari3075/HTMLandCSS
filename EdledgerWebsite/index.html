@@ -10,6 +10,7 @@
     ></script>
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/utilites.css" />
     <title>Welocoime To Edgeleader</title>
   </head>
@@ -25,7 +26,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#cases">Cases</a></li>
-            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#blog">Blogs</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -196,7 +197,7 @@
           <div class="column">
             <div class="column-2 bg-light">
               <h2>Request Callback</h2>
-              <form action="process.php" method="post" class="callback-form">
+              <form action="process.php" method="POST" class="callback-form">
                 <div class="form-control">
                   <label for="name">Name</label>
                   <input
@@ -240,6 +241,24 @@
         </div>
         <p>Copyright &copy; 2023-EdgeLedger</p>
       </footer>
-  
+      <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"></script>
+      <script>
+        //smooth scrolling
+        $('.btn').on('click', function(event){
+          if(this.hash !==''){
+            event.preventDefault();
+            const hash=this.hash;
+            $('html, body').animate(
+              {
+                scrollTop:$(hash).offset().top
+              },
+              800
+            )
+          }
+        });
+      </script>
   </body>
 </html>
