@@ -8,9 +8,9 @@
       src="https://kit.fontawesome.com/b93b9d0421.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="css/utilites.css" />
     <title>Welocoime To Edgeleader</title>
   </head>
@@ -48,9 +48,10 @@
             <div>
               <h3>Investment Banking</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium ipsam veniam et corrupti magni iusto labore,
-                nesciunt aut voluptate aliquid.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+                repellat laudantium atque corrupti vitae excepturi sunt nemo
+                expedita cum aliquid minima, deserunt dignissimos quas vel
+                itaque quae molestias eveniet dolore.
               </p>
             </div>
           </div>
@@ -113,11 +114,15 @@
         </header>
         <div class="row">
           <div class="column">
-            <a href="images/cases/cases1.jpg" data-lightbox="cases"  data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-            laborum?">
+            <a
+              href="images/cases/cases1.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+            laborum?"
+            >
               <img src="images/cases/cases1.jpg" />
             </a>
-           
+
             <img src="images/cases/cases2.jpg" data-lightbox="" />
           </div>
           <div class="column">
@@ -232,33 +237,34 @@
         </div>
       </section>
     </main>
-      <footer class="footer bg-dark">
-        <div class="social">
-          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-          <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-        </div>
-        <p>Copyright &copy; 2023-EdgeLedger</p>
-      </footer>
-      <script
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2023-EdgeLedger</p>
+    </footer>
+    <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"></script>
-      <script>
-        //smooth scrolling
-        $('.btn').on('click', function(event){
-          if(this.hash !==''){
-            event.preventDefault();
-            const hash=this.hash;
-            $('html, body').animate(
-              {
-                scrollTop:$(hash).offset().top
-              },
-              800
-            )
-          }
-        });
-      </script>
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //smooth scrolling
+      $(".btn").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800
+          );
+        }
+      });
+    </script>
   </body>
 </html>
